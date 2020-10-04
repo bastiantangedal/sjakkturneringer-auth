@@ -1,6 +1,9 @@
-// eslint-disable-next-line import/newline-after-import
+/* eslint-disable import/newline-after-import */
 const express = require('express');
+const cors = require('cors');
 const app = express();
+
+app.use(cors());
 
 // Import routes
 const authRoute = require('./routes/auth');
